@@ -1,5 +1,0 @@
-{
-    "diffEditor.useInlineViewWhenSpaceIsLimited": false,
-    "diffEditor.experimental.useTrueInlineView": false,
-    "workbench.editor.centeredLayoutFixedWidth": true
-}
