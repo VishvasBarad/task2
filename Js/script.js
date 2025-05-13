@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const today = new Date();
 
   // Set max and min dates for DOB field
-  const maxDate = new Date(today.getFullYear() - 18, today.getMonth(), today.getDate())
+  const maxDate = new Date(today.getFullYear() - 0, today.getMonth(), today.getDate())
     .toISOString().split("T")[0];
-  const minDate = new Date(today.getFullYear() - 100, today.getMonth(), today.getDate())
+  const minDate = new Date(today.getFullYear() - 150, today.getMonth(), today.getDate())
     .toISOString().split("T")[0];
   dobInput.max = maxDate;
   dobInput.min = minDate;
@@ -70,8 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
         dobError.innerText = "You must be at least 18 years old.";
         dobError.classList.remove("hidden");
         isValid = false;
-      } else if (actualAge > 100) {
-        dobError.innerText = "Age must not exceed 100 years.";
+      } else if (actualAge > 110) {
+        dobError.innerText = "Age must not exceed 109 years.";
         dobError.classList.remove("hidden");
         isValid = false;
       } else {
