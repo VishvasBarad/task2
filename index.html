@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    <!-- <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA93vPL_wVqgkt71nLOdViAOJ07ltqfnMk&callback=initMap"
+      async
+      defer
+    ></script> -->
+
+    <script src="./Js/script.js"></script>
+</head>
+<body>
+    <!-- content us section  -->
+    <div class="bg-white px-6 py-12">
+        <div class="max-w-6xl mx-auto">
+          <!-- Title -->
+          <div class="flex items-center space-x-4 mb-12">
+            <div class="w-10 h-px bg-black"></div>
+            <h2 class="text-2xl font-semibold text-black">Contact us</h2>
+          </div>
+      
+          <!-- Contact Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-gray-700">
+            
+            <!-- Address -->
+            <div class="flex items-start space-x-4">
+              <div class="bg-gray-100 rounded-full p-2">
+                <img class="size-7" src="./assets/images/Group 34.png" alt="">
+              </div>
+              <div>
+                <h3 class="font-semibold text-black">Address</h3>
+                <p>Jaipur Rajasthan INDIA<br />Pin 342087</p>
+              </div>
+            </div>
+      
+            <!-- Call us -->
+            <div class="flex items-start space-x-4">
+              <div class="bg-gray-100 rounded-full p-2">
+                <img class="size-7" src=".//assets/images/Group 33.png" alt="">
+              </div>
+              <div>
+                <h3 class="font-semibold text-black">Call us</h3>
+                <p>+91 98765 43210</p>
+              </div>
+            </div>
+      
+            <!-- Email -->
+            <div class="flex items-start space-x-4">
+              <div class="bg-gray-100 rounded-full p-2">
+                <img class="size-7" src=".//assets/images/Group 35.png" alt="">
+              </div>
+              <div>
+                <h3 class="font-semibold text-black">Email us</h3>
+                <p>info@test.com</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    <!-- end of section        -->
+
+    <!-- form -->
+    <div class="bg-[#000000e6] py-16 px-4">
+      <div class="max-w-5xl mx-auto bg-[#111111] text-white px-4 py-8 md:px-16 md:py-20 rounded-2xl shadow-2xl">
+        <h2 class="text-center text-xl md:text-3xl font-bold mb-10 md:mb-12 leading-tight">
+          Get in touch with us.<br />
+          We're here to assist you.
+        </h2>
+    
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-12 gap-y-6 md:gap-y-8 text-sm text-gray-300">
+          <!-- Input fields -->
+          <div>
+            <label class="block mb-1">Full name</label>
+            <input type="text" value=""
+              class="bg-transparent border-b border-gray-500 w-full text-white placeholder-white focus:outline-none" />
+          </div>
+          <div>
+            <label class="block mb-1">Email address</label>
+            <input type="email"
+              class="bg-transparent border-b border-gray-500 w-full text-white focus:outline-none" />
+          </div>
+          <div>
+            <label class="block mb-1">Phone number</label>
+            <input type="text"
+              class="bg-transparent border-b border-gray-500 w-full text-white focus:outline-none" />
+          </div>
+          <div>
+            <label class="block mb-1">Date of birth</label>
+            <!-- <input type="date" id="dob" class="bg-transparent border-b cursor-pointer border-gray-500 w-full text-white focus:outline-none" />
+            <p id="dob-error" class="text-red-500 text-xs mt-1 hidden"></p> -->
+            <input 
+              type="date" 
+              id="dob" 
+              max="" 
+              min="" 
+              onkeydown="return false" 
+              class="bg-transparent border-b cursor-pointer border-gray-500 w-full text-white focus:outline-none"
+            />
+            <p id="dob-error" class="text-red-500 text-xs mt-1 hidden"></p>
+
+
+
+          </div>
+          <div>
+            <label class="block mb-1" for="gender">Gender</label>
+            <select id="gender"
+              class="bg-[#000000e6] border-b cursor-pointer hover:bg-gray-800 border-gray-500 w-full text-white focus:outline-none">
+              <option value="">Select Gender</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+            <p id="gender-error" class="text-red-500 text-xs mt-1 hidden">*Required</p>
+          </div>
+
+          <div>
+            <label class="block mb-1">City</label>
+            <input type="text"
+              class="bg-transparent border-b border-gray-500 w-full text-white focus:outline-none" />
+          </div>
+
+              
+
+          <!-- State dropdown -->
+          <div>
+              <label class="block mb-1" for="state">State</label>
+              <select id="state"
+              class="bg-[#000000e6] border-b cursor-pointer hover:bg-gray-800 border-gray-500 w-full text-white focus:outline-none">
+              <option class="" value="">Select State</option>
+              <option>Andhra Pradesh</option>
+              <option>Arunachal Pradesh</option>
+              <option>Assam</option>
+              <option>Bihar</option>
+              <option>Chhattisgarh</option>
+              <option>Goa</option>
+              <option>Gujarat</option>
+              <option>Haryana</option>
+              <option>Himachal Pradesh</option>
+              <option>Jharkhand</option>
+              <option>Karnataka</option>
+              <option>Kerala</option>
+              <option>Madhya Pradesh</option>
+              <option>Maharashtra</option>
+              <option>Manipur</option>
+              <option>Meghalaya</option>
+              <option>Mizoram</option>
+              <option>Nagaland</option>
+              <option>Odisha</option>
+              <option>Punjab</option>
+              <option>Rajasthan</option>
+              <option>Sikkim</option>
+              <option>Tamil Nadu</option>
+              <option>Telangana</option>
+              <option>Tripura</option>
+              <option>Uttar Pradesh</option>
+              <option>Uttarakhand</option>
+              <option>West Bengal</option>
+              </select>
+              <p class="text-red-500 text-xs mt-1 hidden" id="state-error">*Required</p>
+          </div>
+          
+
+          <!-- address  -->
+          <div>
+            <label class="block mb-1">Address</label>
+            <input type="text"
+              class="bg-transparent border-b border-gray-500 w-full text-white focus:outline-none" />
+          </div>
+          
+    
+          <!-- Radio Buttons -->
+          <div class="col-span-1 flex flex-col  items-start  gap-3 md:gap-6">
+            <span class="text-white font-semibold">Request a counselling session</span>
+            <div class="flex gap-4">
+              <label class="flex items-center space-x-2">
+                <input type="radio" name="counselling" class="accent-white cursor-pointer" />
+                <span>Yes</span>
+              </label>
+              <label class="flex items-center space-x-2">
+                <input type="radio" name="counselling" class="accent-white cursor-pointer" />
+                <span>No</span>
+              </label>
+            </div>
+            <p id="counselling-error" class="text-red-500 text-xs hidden">*Select an option</p>
+          </div>
+    
+          <!-- File Upload -->
+          <div class="col-span-1">
+            <label class="block mb-1">Upload your CV/Resume</label>
+            <label class="flex items-center space-x-2 border-b border-gray-500 pb-1 cursor-pointer w-fit">
+              
+              <img src="./assets/images/Vector.svg" alt="">
+              <span></span>
+              <input type="file" class="" />
+            </label>
+          </div>
+    
+          <!-- Checkbox -->
+          <div class="col-span-2 flex flex-col mt-4">
+            <div class="flex items-start space-x-2">
+              <input type="checkbox" class="accent-white cursor-pointer mt-1" />
+              <label class="text-white">Agree terms and conditions</label>
+            </div>
+            <p id="terms-error" class="text-red-500 text-xs mt-1 hidden">*You must agree to continue</p>
+          </div>
+          
+    
+          <!-- Submit Button -->
+          <div class="col-span-2 mt-6">
+            <button type="submit"
+              class="bg-gray-200 cursor-pointer text-black text-sm font-semibold px-6 py-2 rounded hover:bg-gray-400 transition">
+              Submit Information
+            </button>
+          </div>
+
+          
+        </form>
+        
+      </div>
+    </div>
+
+    <div id="success-popup" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 hidden">
+      <div class="bg-white text-black rounded-lg p-6 text-center max-w-sm w-full shadow-xl">
+        <h2 class="text-xl font-semibold mb-4">Your Form Is Submitted</h2>
+        <button id="popup-ok" class="bg-black cursor-pointer text-white px-4 py-2 rounded hover:bg-gray-800">
+          OK
+        </button>
+      </div>
+    </div>
+    <!-- end of form        -->
+
+    <!-- location -->
+      <!-- <div id="map" class="mt-10 m-auto md:h-[500px] w-[80%]"></div>
+      <script>
+        function initMap() {
+          const location = { lat: 26.1755032, lng: 72.9328963 }; // Example: New Delhi
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 10,
+            center: location,
+          });
+
+          const marker = new google.maps.Marker({
+            position: location,
+            map: map,
+          });
+        }
+      </script> -->
+
+      <iframe class="m-auto mt-10 md:h-[500px] w-[80%]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.650695216817!2d72.9328963!3d26.1755032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418c261937c551%3A0x65b7b9d2944ffeb4!2sCapsitech!5e0!3m2!1sen!2sin!4v1747107511586!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- location -->
+     
+
+    <!-- start of FAQ -->
+
+    <section class="bg-white py-16 px-4 md:px-8 max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-semibold text-center text-gray-800 mb-2">
+          Do you have any quesiton
+        </h2>
+        <p class="text-center text-sm text-gray-500 mb-8">
+          Our support team ready to help you, please contact with them
+        </p>
+      
+        <div class="space-y-4">
+          <!-- FAQ Item 1 -->
+          <div class="border-b pb-4">
+            <button class="flex items-start text-left w-full cursor-pointer text-gray-800 hover:text-gray-700 ">
+              <span class="mr-2 mt-1 text-gray-600"><img class="size-[16px]" src="./assets/images/Combined shape 15711.png" alt=""></span>
+              <span class="text-sm font-medium">How to contact with riders emergency ?</span>
+            </button>
+          </div>
+      
+          <!-- FAQ Item 2 -->
+          <div class="border-b pb-4">
+            <button class="flex items-start text-left w-full cursor-pointer text-gray-800 hover:text-gray-700 ">
+              <span class="mr-2 mt-1 text-gray-600"><img class="size-[16px]" src="./assets/images/Combined shape 15711.png" alt=""></span>
+              <span class="text-sm font-medium">App installation failed, how to update system information?</span>
+            </button>
+          </div>
+      
+          <!-- FAQ Item 3 (Active) -->
+          <div class="border-b pb-4">
+            <button class="flex items-start text-left cursor-pointer w-full hover:text-gray-700 font-semibold ">
+              <span class="mr-2 mt-1 text-blue-600"><img class="size-[16px]" src="./assets/images/Combined shape 15712.png" alt=""></span>
+              <span class="text-sm font-medium">Website reponse taking time, how to improve?</span>
+            </button>
+            <p class="mt-2 text-sm text-gray-500 pl-6">
+              Get your blood tests delivered at the home collect a sample from management news. Get your
+              blood tests delivered at the home collect a sample from management news. Get your blood
+              tests delivered at the home collect a sample from management news. Get your blood tests
+              delivered at the home.
+            </p>
+          </div>
+      
+          <!-- FAQ Item 4 -->
+          <div class="border-b pb-4">
+            <button class="flex items-start text-left cursor-pointer w-full text-gray-800 hover:text-gray-700 focus:outline-none">
+              <span class="mr-2 mt-1 text-gray-600"><img class="size-[16px]" src="./assets/images/Combined shape 15711.png" alt=""></span>
+              <span class="text-sm font-medium">New update fixed all bug and issues</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- end of FAQ -->
+
+      <!-- Newsletter Section -->
+<section class="relative bg-white pb-0">
+    <div class="text-center max-w-xl mx-auto pt-20 px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        Subscribe to Our Newsletter<br />for Design Insights
+      </h2>
+      <p class="text-gray-500 text-sm mb-8">
+        Be the first to discover trends, inspirations, and special offers as<br />
+        we bring the world of design directly to your inbox
+      </p>
+  
+      <!-- Email Input & Button -->
+      <div class="bg-white  flex items-center shadow-lg  max-w-xl mx-auto px-4 py-2 space-x-2">
+        <img class="h-3 mt-1" src="./assets/images/fi-br-envelope.png" alt="">
+        <input type="email" placeholder="Enter your email address"
+          class="flex-grow bg-transparent focus:outline-none text-sm" />
+        <button
+          class="bg-black text-white text-sm px-8 py-2  hover:bg-gray-800 transition">Subscribe</button>
+      </div>
+    </div>
+   <!-- Footer Section -->
+
+    <!-- Footer Background Layer -->
+    <div class="absolute bottom-0 left-0 w-full h-48 bg-black -z-10"></div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-black text-white px-6 pt-32 pb-12">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
+      <!-- Logo & Social -->
+      <div>
+        <img class="h-8 mb-4" src="./assets/images/Logo 2.png" alt="">
+        <p class="mb-4 w-[200px]">VivaDecor your premier destination for luxury and modern interior design</p>
+        <div class="flex mt-10 space-x-3">
+            <img class=" h-[32px] w-[32px]" src="./assets/images/Facebook.png" alt="">
+            <img class=" h-[32px] w-[32px]" src="./assets/images/X.png" alt="">
+            <img class="h-[32px] w-[32px]" src="./assets/images/Instagram.png" alt="">
+            <img class="h-[32px] w-[32px]" src="./assets/images/Linkdin.png" alt="">
+          
+        </div>
+      </div>
+  
+      <!-- Services Columns -->
+      <div>
+        <h4 class="font-semibold mb-3">Our Services</h4>
+        <ul class="space-y-1 text-gray-400">
+          <li>Interior design</li>
+          <li>Outdoor design</li>
+          <li>Lightning design</li>
+          <li>Office design</li>
+        </ul>
+      </div>
+  
+      <div>
+        <h4 class="font-semibold mb-3">Our Services</h4>
+        <ul class="space-y-1 text-gray-400">
+          <li>Reviews</li>
+          <li>Careers</li>
+          <li>Pricing</li>
+          <li>Press inquires</li>
+        </ul>
+      </div>
+  
+      <div>
+        <h4 class="font-semibold mb-3">Our Services</h4>
+        <ul class="space-y-1 text-gray-400">
+          <li>info@vivadecor.com</li>
+          <li>Design Avenue Cityville,</li>
+          <li>CA 90210 United States</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+</body>
+</html>
